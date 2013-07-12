@@ -52,6 +52,7 @@ var buildfn = function(checksfile) {
 		out[checks[ii]] = present;
 	    }
 	    var outJson = JSON.stringify(out, null, 4);
+	    fs.writeFileSync("JSONoutput.txt", outJson);
 	    console.log(outJson);
 	}
     };
